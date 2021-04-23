@@ -1,13 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Spartan', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    font-size: 15px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+.back {
+  background-color: hsl(180, 29%, 50%);
+  background-image: url("./images/bg-header-desktop.svg");
+  width: 100%;
+  height: 6rem;
+}
+.content {
+  background-color: hsl(180, 52%, 96%);
+  padding: 5rem;
+}
+.card {
+  border-style: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 1.5rem;
+  box-shadow: 0 10px 9px 2px rgba(5, 95, 110, 0.1);
+  margin: 1.3em 2em;
+}
+.card:hover {
+   border-left: 5px solid hsl(180, 29%, 50%);
+}
+card:active {
+  border-left: 5px solid hsl(180, 29%, 50%);
+}
+.card>Avatar {
+  padding: 1rem;
+}
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.rightMost {
+  margin: 2rem 0;
+}
+.btn1 {
+  background-color: hsl(180, 50%, 57%, 0.15);
+  color: hsl(180, 39%, 43%);
+  padding: 0.4rem;
+  margin: .5rem;
+  font-size: .8rem;
+  border-radius: 2px;
+  max-height: 2.2em;
+  border: none;
+}
+.btn1:hover {
+  background-color: hsl(180, 39%, 43%);
+  color: white;
+}
+.middleMost {
+  display: flex;
+  flex-flow: column ;
+}
+.middleMost>p {
+  margin: 7px 0;
+}
+.m1 {
+  padding: 2px;
+  color: hsl(180, 39%, 43%);
+  margin: 0 4px;
+  margin-left: 0;
+}
+.m2 {
+  background-color: hsl(180, 39%, 43%);
+  color: white;
+  padding: 5px;
+  border-radius:10px;
+  font-size: 0.6em;
+  margin: 0 3px;
+}
+.m3 {
+  background-color: hsl(180, 14%, 20%);
+  color: white;
+  padding: 5px;
+  border-radius:10px;
+  font-size: 0.6em;
+  margin-left: 3px;
+}
+.md {
+  color: black;
+  font-weight: 700;
+}
+.md:hover {
+  color: hsl(180, 39%, 43%);
+}
+.ml {
+  color: hsl(180, 8%, 52%);
+  font-size: 0.8em;
+}
+.rta {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.filter {
+  margin-top: -30px;
+  border-style: none;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 10px 9px 2px rgba(5, 95, 110, 0.1);
+  margin: 1.3em 2em;
+}
+.fil {
+  background-color: hsl(180, 50%, 57%, 0.15);
+  color: hsl(180, 39%, 43%);
+  padding: 0.4rem;
+  /* margin: .5rem; */
+  font-size: .8rem;
+  border-radius: 2px;
+  max-height: 2.2em;
+}
+.fill {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  padding: 0.4rem;
+  cursor: pointer;
+  font-size: .8rem;
+  border-radius: 2px;
+  max-height: 2.2em;
+  border: none;
+}
+.clr {
+  float: right;
+  color: hsl(180, 8%, 52%);
+  cursor: pointer;
+}
+
+/* screen-width */
+@media only screen and (max-width: 990px) {
+  .btn1 {
+    font-size: .7rem;
+  }
+  .md {
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .btn1 {
+    max-height: 2em;
+  }
+  .md {
+    font-weight: 600;
+    font-size: .8rem;
+  }
+}
+@media only screen and (max-width: 930px) {
+  .btn1 {
+    padding: 3px;
+  }
+  .m2, .m3 {
+    font-size: 0.5em;
+  }
+  .m1 {
+    font-size: 0.7em;
+  }
+  .md {
+    /* font-weight: 500; */
+    font-size: .65rem;
+  }
+.ml {
+  font-size: 0.6em;
+}
+}
+@media only screen and (max-width: 855px) {
+  .btn1 {
+    max-height: 1.7em;
+    font-size: .55em;
+  }
+  .m1, .m2, .m3 {
+    margin: 0 1px;
+  }
+}
+@media only screen and (max-width: 785px) {
+  .m1, .m2, .m3 {
+    font-size: 0.5em;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn1 {
+    max-height: 1.7em;
+    font-size: .55em;
+    margin-left: 0;
+  }
+  .m1 {
+    font-size: 0.9em;
+  }
+  .m2, .m3 {
+    margin: 0 1px;
+    font-size: 0.7em;
+  }
+  .rta {
+    border-width:1.5px;  
+    border-top-style:outset;
+    padding-top: 0;
+    padding-right: 0;
+    flex-direction: row;
+  }
+  .md {
+    margin-bottom: .4em;
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .content {
+    padding: 2em;
+  }
+  .rta {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .content {
+    padding: .5em;
+  }
+  .back {
+    background-color: hsl(180, 29%, 50%);
+    background-image: url("./images/bg-header-mobile.svg");
+    width: 100%;
+    height: 4rem;
+  }
 }
