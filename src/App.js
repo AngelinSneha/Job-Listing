@@ -42,13 +42,7 @@ const useStyles = makeStyles((theme) => ({
 function App() {
   const classes = useStyles();
   const [values, setvalues] = useState([]);
-  const myfunction = () => {
-    var x = document.getElementById("myBtn").value;
-    // setvalues(x);
-    console.log(x);
-    // console.log(values);
-    // document.getElementById("demo").innerHTML = x;
-  }
+  
   useEffect(() => {
     console.log("useEffect", values)
   }, [values])
@@ -100,9 +94,6 @@ function App() {
     }
     const handleTools = (id, p) => {
       console.log(id, p);
-      // let idx = Menu.find(x => (x.id == e.target.value));
-      // let idx = Menu.find(x => x.id === e.target.value)
-      // console.log('bro languages da',idx);
       
       if(!values.includes(id)) {
         setvalues([...values, 
